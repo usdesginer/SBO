@@ -11,9 +11,7 @@ import {
   EyeOff,
   Check,
   AlertCircle,
-  Database,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export default function RegisterMemberPage() {
   const router = useRouter();
@@ -21,7 +19,6 @@ export default function RegisterMemberPage() {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(false);
-  const [seedDemo, setSeedDemo] = useState(true);
 
   const [form, setForm] = useState({
     fullName: "",
@@ -59,7 +56,6 @@ export default function RegisterMemberPage() {
         password: form.password,
         role: form.role,
         kycStatus: form.kycStatus,
-        seedDemo,
       }),
     });
 
@@ -69,11 +65,7 @@ export default function RegisterMemberPage() {
     if (!res.ok) {
       setError(data.error ?? "Failed to create member.");
     } else {
-      setSuccess(
-        `Member "${form.fullName}" created successfully!${
-          seedDemo ? " Demo data has been seeded." : ""
-        }`
-      );
+      setSuccess(`Member "${form.fullName}" created successfully!`);
       setTimeout(() => router.push(`/admin/members/${data.userId}`), 1500);
     }
   };
@@ -213,38 +205,6 @@ export default function RegisterMemberPage() {
               </select>
             </div>
           </div>
-        </div>
-
-        {/* Demo Data */}
-        <div className="bg-white border border-[#E8EDF4] rounded-[20px] p-6 shadow-[var(--shadow-card)]">
-          <h2 className="text-sm font-bold text-[#101827] border-b border-[#E8EDF4] pb-3 mb-4 uppercase tracking-wider">
-            Demo Data
-          </h2>
-
-          <label className="flex items-start gap-3 cursor-pointer group">
-            <div className="mt-0.5">
-              <div
-                onClick={() => setSeedDemo(!seedDemo)}
-                className={cn(
-                  "w-5 h-5 rounded-[6px] border-2 flex items-center justify-center transition-all",
-                  seedDemo
-                    ? "bg-[#0B1220] border-[#0B1220]"
-                    : "border-[#CBD5E1] group-hover:border-[#0B1220]"
-                )}
-              >
-                {seedDemo && <Check className="w-3 h-3 text-white" />}
-              </div>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-[#101827]">
-                Seed demo banking data
-              </p>
-              <p className="text-xs text-[#718096] mt-0.5">
-                Pre-populate accounts, transactions, cards, loans, and investments so the member has a realistic starting experience.
-              </p>
-            </div>
-            <Database className="w-4 h-4 text-[#94A3B8] mt-0.5 ml-auto flex-shrink-0" />
-          </label>
         </div>
 
         {/* Feedback */}
