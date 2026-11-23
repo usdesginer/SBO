@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="alpsSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050e1d"/>
+      <stop offset="65%" stop-color="#0f2747"/>
+      <stop offset="100%" stop-color="#143258"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1b34"/>
+      <stop offset="100%" stop-color="#030812"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="540" fill="url(#alpsSky)"/>
+  <rect y="540" width="1200" height="260" fill="url(#lake)"/>
+  <polygon points="0,540 180,310 340,440 530,220 710,410 880,250 1070,420 1200,320 1200,540" fill="#091a32"/>
+  <polygon points="430,335 530,220 620,325 565,305 530,330 490,305" fill="#dbe6f5" opacity="0.22"/>
+  <polygon points="795,335 880,250 965,335 915,318 880,338 840,315" fill="#dbe6f5" opacity="0.2"/>
+  <line x1="0" y1="540" x2="1200" y2="540" stroke="#c5a059" stroke-opacity="0.5" stroke-width="2"/>
+  <g fill="#c5a059" opacity="0.75">
+    <rect x="588" y="106" width="24" height="6" rx="2"/>
+    <rect x="597" y="97" width="6" height="24" rx="2"/>
+  </g>
+  <text x="600" y="158" text-anchor="middle" fill="#c5a059" font-family="Georgia, serif" font-size="18" letter-spacing="6" opacity="0.85">ZURICH · SWITZERLAND</text>
+</svg>

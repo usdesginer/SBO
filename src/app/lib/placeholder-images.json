@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "url": "/placeholders/hero.svg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Modern Zurich skyline with Alpine backdrop",
+    "hint": "luxury zurich skyline"
+  },
+  "mobileApp": {
+    "url": "/placeholders/mobile-app.svg",
+    "width": 600,
+    "height": 1200,
+    "alt": "Pentagon Finances premium mobile interface",
+    "hint": "luxury phone banking"
+  },
+  "vault": {
+    "url": "/placeholders/vault.svg",
+    "width": 800,
+    "height": 600,
+    "alt": "Exclusive private vault facility",
+    "hint": "private vault luxury"
+  },
+  "swissHeritage": {
+    "url": "/placeholders/swiss-heritage.svg",
+    "width": 1200,
+    "height": 800,
+    "alt": "Scenic Alpine landscape in Switzerland",
+    "hint": "swiss alps luxury"
+  },
+  "businessBanking": {
+    "url": "/placeholders/business-banking.svg",
+    "width": 800,
+    "height": 600,
+    "alt": "Institutional Swiss corporate banking",
+    "hint": "institutional banking zurich"
+  },
+  "dashboardPreview": {
+    "url": "/placeholders/dashboard-preview.svg",
+    "width": 1200,
+    "height": 800,
+    "alt": "Pentagon Finances institutional dashboard",
+    "hint": "premium banking interface"
+  }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040b18"/>
+      <stop offset="100%" stop-color="#0b1f3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#dbg)"/>
+  <rect x="64" y="56" width="1072" height="688" rx="28" fill="#071326" stroke="#1e3a63" stroke-width="2"/>
+  <rect x="64" y="56" width="220" height="688" rx="28" fill="#050e1d"/>
+  <text x="104" y="122" fill="#c5a059" font-family="Georgia, serif" font-size="20" font-weight="700">PENTAGON</text>
+  <rect x="104" y="170" width="140" height="36" rx="10" fill="#132b50"/>
+  <rect x="104" y="224" width="140" height="28" rx="8" fill="#0d1f3a"/>
+  <rect x="104" y="268" width="140" height="28" rx="8" fill="#0d1f3a"/>
+  <rect x="330" y="106" width="240" height="130" rx="20" fill="#0b1d38" stroke="#c5a059" stroke-opacity="0.35"/>
+  <rect x="595" y="106" width="240" height="130" rx="20" fill="#0b1d38" stroke="#1e3a63"/>
+  <rect x="860" y="106" width="230" height="130" rx="20" fill="#0b1d38" stroke="#1e3a63"/>
+  <text x="358" y="152" fill="#8ca2c0" font-family="system-ui, sans-serif" font-size="13" letter-spacing="2">TOTAL LIQUIDITY</text>
+  <text x="358" y="202" fill="#ffffff" font-family="Georgia, serif" font-size="30" font-weight="700">CHF 18.42M</text>
+  <rect x="330" y="270" width="760" height="420" rx="24" fill="#0a1930" stroke="#1b355c"/>
+  <polyline points="380,585 480,535 580,552 680,465 780,482 880,385 980,405 1045,330" fill="none" stroke="#c5a059" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1045" cy="330" r="8" fill="#c5a059"/>
+</svg>
